@@ -10,7 +10,7 @@ listing:
       type: grid
       grid-columns: 1
       categories: false
-      template: episodes/listing.ejs
+      template: episodes/listing-wide.ejs
       max-items: 1
 ---
 

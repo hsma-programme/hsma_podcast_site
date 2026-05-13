@@ -1,0 +1,77 @@
+```{=html}
+<style>
+  @media (max-width: 768px) {
+    .main-card-content {
+      flex-direction: column !important;
+    }
+    .main-card-content img {
+      max-width: 100% !important;
+      height: auto !important;
+    }
+  }
+
+    a:link { color:#fcfcfc; text-decoration: none; }
+    a:visited { color:#fcfcfc; text-decoration: none; }
+    a:hover { color:#ffd900; text-decoration: none; }
+    a:active { color:#ffd900; text-decoration: underline; }
+
+    .project-link-listing-button {
+      margin: 0 !important;
+    }
+
+</style>
+
+<div class="list grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1250px)); gap: 20px;">
+
+  <% for (const item of items) { %>
+    <div class="custom-grid-card border-4 rounded-3" <%= metadataAttrs(item) %> style="padding: 15px;">
+      <div class="main-card-content" style="display: flex; gap: 20px; align-items: stretch; flex-direction: row;">
+
+        <% if(item['image']) { %>
+          <a href="<%- item.path %>" style="display: flex; align-items: center; flex-shrink: 0;">
+            <img
+              src="<%- item.image %>"
+              alt="<%- item.title %>"
+              style="max-height: 350px; max-width: 350px; width: auto; height: auto; object-fit: contain; border-radius: 4px;"
+            />
+          </a>
+        <% } %>
+
+        <div class="card-text-content"
+             style="flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px; padding: 10px;">
+
+          <div class="project-content listing-title">
+            <h5 class="no-anchor card-title listing-title"><%= item['title'] %></h5>
+          </div>
+
+          <% if (item['date']) { %>
+            <div class="quarto-categories">
+              <button class="category-button"><%= item['date'] %></button>
+            </div>
+          <% } %>
+
+          <% if (item['pub-info'] && item['pub-info'].abstract) { %>
+            <p class="listing-abstract" style="flex-grow: 1;"><%= item['pub-info'].abstract %></p>
+          <% } %>
+
+          <div class="project-details-listing" style="display: flex; flex-wrap: wrap; gap: 0; justify-content: center; width: 100%; row-gap: 0;">
+            <% if (item['pub-info']) { %>
+              <% if (item['pub-info'].links) { %>
+                <% for (const link of item['pub-info'].links) { %>
+                  <% if (link.url) { %>
+                    <button class="project-link-listing-button" style="flex: 1 1 auto; margin: 0;"><a href="<%- link.url %>"><i class="<%- link.icon %>"></i> <%= link.name %> </a></button>
+                  <% } %>
+                <% } %>
+              <% } %>
+            <% } %>
+            <button class="project-link-listing-button" style="flex: 1 1 auto; margin: 0;"><a href="<%- item.path %>"><i class="fa fa-info-circle"></i> Additional Resources </a></button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  <% } %>
+</div>
+
+```
