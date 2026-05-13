@@ -19,7 +19,7 @@ body {
 	text-align: center;
 }
 
-#listing-python_they_wrote .list.grid {
+.quarto-listing {
     justify-content: center;
     justify-items: center;
 }
