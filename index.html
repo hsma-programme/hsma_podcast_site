@@ -268,7 +268,7 @@ body {
     text-align: center;
 }
 
-#listing-python_they_wrote .list.grid {
+.quarto-listing {
     justify-content: center;
     justify-items: center;
 }
@@ -277,46 +277,70 @@ body {
 <section id="most-recent-episode" class="level2">
 <h2 class="anchored" data-anchor-id="most-recent-episode">Most Recent Episode</h2>
 <div id="listing-python_they_wrote" class="quarto-listing quarto-listing-container-custom">
-<div class="list grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 450px)); gap: 20px;">
+<style>
+  @media (max-width: 768px) {
+    .main-card-content {
+      flex-direction: column !important;
+    }
+    .main-card-content img {
+      max-width: 100% !important;
+      height: auto !important;
+    }
+  }
+
+    a:link { color:#fcfcfc; text-decoration: none; }
+    a:visited { color:#fcfcfc; text-decoration: none; }
+    a:hover { color:#ffd900; text-decoration: none; }
+    a:active { color:#ffd900; text-decoration: underline; }
+
+    .project-link-listing-button {
+      margin: 0 !important;
+    }
+
+</style>
+
+<div class="list grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1250px)); gap: 20px;">
 
   
-    <div class="custom-grid-card border-2 rounded-3" data-index="0" data-listing-date-sort="1781913600000" data-listing-file-modified-sort="1778665702954" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
-          <div class="main-card-content">
-            
-              <a href="" target="_blank">
-                <img class="card-img listing-image" src="./resources/placeholder.png" alt="(Coming Soon) Episode 1: Kayleigh Haydock">
-              </a>
-              
+    <div class="custom-grid-card border-4 rounded-3" data-index="0" data-listing-date-sort="1781913600000" data-listing-file-modified-sort="1778667188378" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" style="padding: 15px;">
+      <div class="main-card-content" style="display: flex; gap: 20px; align-items: stretch; flex-direction: row;">
 
-              <div class="project-content listing-title">
-                <h5 class="no-anchor card-title listing-title">(Coming Soon) Episode 1: Kayleigh Haydock</h5>
-            </div>
+        
+          <a href="./episodes/ep_1/index.html" style="display: flex; align-items: center; flex-shrink: 0;">
+            <img src="./resources/placeholder.png" alt="(Coming Soon) Episode 1: Kayleigh Haydock" style="max-height: 350px; max-width: 350px; width: auto; height: auto; object-fit: contain; border-radius: 4px;">
+          </a>
+        
 
-            
-          <div class="quarto-categories">
-            <button class="category-button">Jun 20, 2026</button>
+        <div class="card-text-content" style="flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 8px; padding: 10px;">
+
+          <div class="project-content listing-title">
+            <h5 class="no-anchor card-title listing-title">(Coming Soon) Episode 1: Kayleigh Haydock</h5>
           </div>
-           
 
-            
-              <p class="listing-abstract">Coming Soon! Stay Tuned...
+          
+            <div class="quarto-categories">
+              <button class="category-button">Jun 20, 2026</button>
+            </div>
+          
+
+          
+            <p class="listing-abstract" style="flex-grow: 1;">Coming Soon! Stay Tuned...
 </p>
+          
 
-                
-
-              </div>
-
-            <div class="project-details-listing">
-                    
-                      
-                    
-                    <button class="project-link-listing-button"><a href="./episodes/ep_1/index.html"><i class="fa fa-info-circle"></i> Additional Resources </a></button>
-
-            </div>
-          </div>
-
+          <div class="project-details-listing" style="display: flex; flex-wrap: wrap; gap: 0; justify-content: center; width: 100%; row-gap: 0;">
             
+              
+            
+            <button class="project-link-listing-button" style="flex: 1 1 auto; margin: 0;"><a href="./episodes/ep_1/index.html"><i class="fa fa-info-circle"></i> Additional Resources </a></button>
           </div>
+
+        </div>
+
+      </div>
+    </div>
+  
+</div>
 
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
