@@ -1,0 +1,16 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/episodes/ep_1/index.html"
+    ]
+  },
+  {
+    "listing": "/episodes.html",
+    "items": [
+      "/episodes/ep_1/index.html",
+      "/episodes/chordcast_1/index.html",
+      "/episodes/chordcast_2/index.html"
+    ]
+  }
+]
