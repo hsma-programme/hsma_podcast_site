@@ -1,0 +1,28 @@
+---
+title: "Chordcast Episode 1: Artificial Ian"
+date: 2019-02-14
+pub-info:
+    abstract: |
+        We talk to one of our Health Service Modelling Associates (HSMAs) Simon Philpott about his role, how the HSMA programme has helped to bring modelling and simulation methods into the decision making process within his organisation, and how his project saw him try to better understand how to make better surgical cancellations using Artificial Intelligence.
+    links:
+    - name: Listen on Apple Podcasts
+      url: https://podcasts.apple.com/au/podcast/episode-1-artificial-ian/id1453030152?i=1000429856995
+      icon: fa-brands fa-apple
+    - name: Listen on Podbean
+      url: https://penchord.podbean.com/e/episode-1-artificial-ian/
+      icon: fa-solid fa-podcast
+image: "image.png"
+title-block-banner: ../../resources/banner.png
+
+
+---
+
+## Transcript
+
+Coming Soon!
+
+## Find out more about Simon's Project
+
+```{=html}
+<iframe width='1280' height='700' src='https://hsma.co.uk/previous_projects/hsma_2/H2_2003_ML_outpatient_client_utlilisation/index.html' title='HSMA Project Page'></iframe>
+```

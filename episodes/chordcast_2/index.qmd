@@ -1,0 +1,27 @@
+---
+title: "Chordcast Episode 2: Ambulantics"
+date: 2019-04-10
+pub-info:
+    abstract: |
+        In our second episode of CHORDCast, we interview one of our original Health Service Modelling Associates - Hannah Trebilcock from Devon Air Ambulance (and formerly of South West Ambulance Service) - about her work modelling for the ambulance service, and her aspirations for bringing modelling, simulation and Artificial Intelligence techniques to the work of Devon Air Ambulance.
+    links:
+    - name: Listen on Apple Podcasts
+      url: https://podcasts.apple.com/au/podcast/ambulantics/id1453030152?i=1000434651393
+      icon: fa-brands fa-apple
+    - name: Listen on Podbean
+      url: https://penchord.podbean.com/e/ambulantics/
+      icon: fa-solid fa-podcast
+image: "image.jpeg"
+title-block-banner: ../../resources/banner.png
+
+---
+
+## Transcript
+
+Coming Soon!
+
+## Find out more about Hannah's Project
+
+```{=html}
+<iframe width='1280' height='700' src='https://hsma.co.uk/previous_projects/hsma_1/H1_1004_modelling_impact_regionalisation_cardiac_arrest_centres/index.html' title='HSMA Project Page'></iframe>
+```

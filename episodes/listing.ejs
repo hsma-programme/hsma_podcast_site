@@ -1,0 +1,49 @@
+```{=html}
+<div class="list grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 450px)); gap: 20px;">
+
+  <% for (const item of items) { %>
+    <div class="custom-grid-card border-2 rounded-3" <%= metadataAttrs(item) %>>
+          <div class="main-card-content">
+            <% if(item['image']) { %>
+              <a href="<%- item.link %>" target="_blank">
+                <img class="card-img listing-image" src="<%- item.image %>" alt="<%- item.title %>" class="card-img-top"/>
+              </a>
+              <% } %>
+
+              <div class="project-content listing-title">
+                <h5 class="no-anchor card-title listing-title"><%= item['title'] %></h5>
+            </div>
+
+            <% if (item['date']) { %>
+          <div class="quarto-categories">
+            <button class="category-button"><%= item['date'] %></button>
+          </div>
+           <% } %>
+
+            <% if (item['pub-info'] && item['pub-info'].abstract) { %>
+              <p class="listing-abstract"><%= item['pub-info'].abstract %></p>
+
+                <% } %>
+
+              </div>
+
+
+            <div class="project-details-listing">
+                    <% if (item['pub-info']) { %>
+                      <% if (item['pub-info'].links) { %>
+                          <% for (const link of item['pub-info'].links) { %>
+                            <% if (link.url) { %>
+                      <button class="project-link-listing-button"><a href="<%- link.url %>"><i class="<%- link.icon %>"></i> <%= link.name %> </a></button>
+                          <% } %>
+                        <% } %>
+                        <% } %>
+                    <% } %>
+                    <button class="project-link-listing-button"><a href="<%- item.path %>"><i class="fa fa-info-circle"></i> Additional Resources </a></button>
+
+            </div>
+          </div>
+
+            <% } %>
+          </div>
+
+```

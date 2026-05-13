@@ -1,0 +1,20 @@
+---
+title: "(Coming Soon) Episode 1: Kayleigh Haydock"
+date: 2026-06-20
+pub-info:
+    abstract: |
+        Coming Soon! Stay Tuned...
+image: "../../resources/placeholder.png"
+title-block-banner: ../../resources/banner.png
+links:
+    - name: Listen on Apple Podcasts
+      url:
+      icon: fa-brands fa-apple
+    - name: Listen on Podbean
+      url:
+      icon: fa-solid fa-podcast
+---
+
+## Transcript
+
+Coming soon!

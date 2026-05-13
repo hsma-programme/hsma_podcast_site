@@ -1,0 +1,7 @@
+/.quarto/
+.quarto/preview/lock
+/.luarc.json
+*.pyc
+
+**/*.quarto_ipynb
+docs/
