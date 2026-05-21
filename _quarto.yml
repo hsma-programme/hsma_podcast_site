@@ -72,7 +72,6 @@ format:
     theme:
       - darkly
       - resources/style/theme-dark.scss
-      - resources/fonts/css/lexend.css
     css: resources/style/styles.css
     toc: true
     title-block-banner: /resources/banner.png

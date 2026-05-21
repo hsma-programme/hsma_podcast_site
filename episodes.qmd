@@ -21,8 +21,14 @@ listing:
       template: episodes/listing-wide.ejs
 ---
 
+::: {.fade-in .delay-1}
+
 :::{#python_they_wrote}
 :::
+
+:::
+
+::: {.fade-in .delay-3}
 
 ## A Blast from the Past: CHORDCast
 
@@ -31,4 +37,6 @@ Did you know there was an HSMA podcast many years ago?
 Have a listen to the episodes here!
 
 :::{#chordcast}
+:::
+
 :::

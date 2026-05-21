@@ -1,0 +1,6 @@
+typography:
+  fonts:
+    - family: Literata
+      source: google
+  base: Literata
+  headings: Literata
