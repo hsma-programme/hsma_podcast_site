@@ -23,10 +23,47 @@ body {
     justify-content: center;
     justify-items: center;
 }
+
+.columns {
+    display: flex;
+    align-items: center;
+}
+
+/* Left align text column */
+.left-text {
+    text-align: left;
+}
+
+/* Right align image column */
+.right-image {
+    text-align: right;
+}
+
 </style>
+
+:::: {.columns}
+
+::: {.column width='47.5%' .right-image}
+
+![](resources/podcast_logo.png){height=400}
+
+:::
+
+::: {.column width='5%'}
+
+:::
+
+::: {.column width='47.5%' .left-text}
+## Solving the Mysteries of Healthcare Data Science and Modelling
 
 Welcome to the home of 'Python She Wrote' - the podcast of the Health Service Modelling Associates (HSMA) programme.
 
+Join us as we put on our sleuthing hats and interview the people who can help us unravel the mystery of how to do data science better - one fascinating story at a time.
+:::
+
+::::
+
+</br>
 
 ## Most Recent Episode
 
