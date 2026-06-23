@@ -1,20 +1,34 @@
 ---
-title: "(Coming Soon) Episode 1: Kayleigh Haydock"
-date: 2026-06-20
+title: "Episode 1: Kayleigh Haydock"
+date: 2026-06-23
 pub-info:
     abstract: |
-        Coming Soon! Stay Tuned...
+        In this first episode, we introduce the HSMA programme to our listeners, before interviewing one of our alumni - the wonderful Kayleigh Haydock (Artificial Intelligence and Data Science Specialist at Royal Devon University Healthcare NHS Foundation Trust).  We talk to Kayleigh about her career to date, her journey into the world of computing and data science, her experience of the HSMA programme and her pioneering new data science role in the South West of England.
+    links:
+      - name: Listen on Spotify
+        url: https://open.spotify.com/episode/31qozpCajp2OA8hUnXyrFm?si=210fb3a25a244edb
+        icon: fa-brands fa-spotify
+      - name: Listen on Apple Podcasts
+        url: https://podcasts.apple.com/us/podcast/1-the-case-of-the-curious-dancer/id6783287179?i=1000773862239
+        icon: fa-brands fa-apple
 image: "podcast_1_thumb_kayleigh.png"
 title-block-banner: ../../resources/banner.png
-links:
-    - name: Listen on Spotify
-      url:
-      icon: fa-brands fa-spotify
-    - name: Listen on Apple Podcasts
-      url:
-      icon: fa-brands fa-apple
+spotify_embed: "https://open.spotify.com/embed/episode/31qozpCajp2OA8hUnXyrFm?utm_source=generator&theme=0&t=0&si=80245d4cad4e4eee"
+apple_embed: "https://embed.podcasts.apple.com/us/podcast/1-the-case-of-the-curious-dancer/id6783287179?i=1000773862239"
+
 ---
 
-## Transcript
+{{< include ../../resources/podcast-player.html >}}
 
-Coming soon!
+
+Welcome to our brand new podcast - Python They Wrote! The official podcast of the NIHR ARC South West's Health Service Modelling Associates (HSMA) Programme (https://hsma.co.uk). Python They Wrote is a celebration of modelling and data science in healthcare, and features interviews with past and presents students of our HSMA programme talking about real world applied data science in the the health service.
+
+In this first episode, we introduce the HSMA programme to our listeners, before interviewing one of our alumni - the wonderful Kayleigh Haydock (Artificial Intelligence and Data Science Specialist at Royal Devon University Healthcare NHS Foundation Trust).  We talk to Kayleigh about her career to date, her journey into the world of computing and data science, her experience of the HSMA programme and her pioneering new data science role in the South West of England.
+
+We also put Kayleigh through her paces in our brand new regular games - Punder Pressure and Murder Did She Write?  Find out whether her pun and murder deduction skills were up to the task!
+
+Follow us on LinkedIn : https://www.linkedin.com/company/hsma-programme
+
+Subscribe to our YouTube channel : https://www.youtube.com/@hsma
+
+This podcast is independent research supported by the National Institute for Health Research Applied Research Collaboration South West. The views expressed in this podcast are those of the author(s) and not necessarily those of the National Institute for Health Research or the Department of Health and Social Care

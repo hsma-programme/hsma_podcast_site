@@ -3,15 +3,18 @@ toc: false
 title-block-banner: resources/banner.png
 include-back-link: false
 page-layout: full
-listing:
-    - id: python_they_wrote
-      contents: "episodes/ep_*/index.qmd"
-      sort: "name desc"
-      type: grid
-      grid-columns: 1
-      categories: false
-      template: episodes/listing-wide.ejs
-      max-items: 1
+# listing:
+#     - id: python_they_wrote
+#       contents: "episodes/ep_*/index.qmd"
+#       sort: "name desc"
+#       type: grid
+#       grid-columns: 1
+#       categories: false
+#       template: episodes/listing-wide.ejs
+#       max-items: 1
+spotify_embed: "https://open.spotify.com/embed/show/033fZhKMh7wfOOvCunS9C2?utm_source=generator&theme=0&t=0&si=45a1dce3cda44d41"
+apple_embed: "https://embed.podcasts.apple.com/us/podcast/1-the-case-of-the-curious-dancer/id6783287179?i=1000773862239"
+
 ---
 
 <style>
@@ -63,18 +66,8 @@ Join us as we put on our sleuthing hats and interview the people who can help us
 
 ::::
 
-</br>
+{{< include resources/podcast-player.html >}}
 
-::: {.fade-in .delay-2}
-## Most Recent Episode
-
-:::{#python_they_wrote}
-:::
-:::
-
-<br/><br/>
-
----
 
 ```{=html}
 <!-- First value grid box with scroll-trigger class -->
