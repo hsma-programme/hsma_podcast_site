@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-06-20">
+<meta name="dcterms.date" content="2026-06-23">
 
-<title>(Coming Soon) Episode 1: Kayleigh Haydock – Python They Wrote: The HSMA Podcast</title>
+<title>Episode 1: Kayleigh Haydock – Python They Wrote: The HSMA Podcast</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -201,11 +201,17 @@ background-size: cover;
 <header id="title-block-header" class="quarto-title-block projects default toc-left page-columns page-full">
     <div class="quarto-title-banner page-columns page-full">
 
+                <div class="project-link-buttons">
+            <ul class="project-links">
+                                                <button class="custom-button"><a href="https://open.spotify.com/episode/31qozpCajp2OA8hUnXyrFm?si=210fb3a25a244edb"><i class="fa-brands fa-spotify"></i> Listen on Spotify</a></button>
+                                                                <button class="custom-button"><a href="https://podcasts.apple.com/us/podcast/1-the-case-of-the-curious-dancer/id6783287179?i=1000773862239"><i class="fa-brands fa-apple"></i> Listen on Apple Podcasts</a></button>
+                                            </ul>
+        </div>
         
                 <div class="back-nav"><a href="javascript:history.back()">← Back</a></div>
         
         <div class="quarto-title column-body">
-            <h1 class="title">(Coming Soon) Episode 1: Kayleigh Haydock</h1>
+            <h1 class="title">Episode 1: Kayleigh Haydock</h1>
 
             
             
@@ -222,7 +228,7 @@ background-size: cover;
         <div>
         <div class="quarto-title-meta-heading">Published</div>
         <div class="quarto-title-meta-contents">
-          <p class="date">20 June 2026</p>
+          <p class="date">23 June 2026</p>
         </div>
       </div>
       
@@ -234,13 +240,7 @@ background-size: cover;
 </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Contents</h2>
-   
-  <ul>
-  <li><a href="#transcript" id="toc-transcript" class="nav-link active" data-scroll-target="#transcript">Transcript</a></li>
-  </ul>
-</nav>
+    
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
@@ -251,19 +251,70 @@ background-size: cover;
 
 
 
-<div class="abstract">
-    <p>Coming Soon! Stay Tuned…</p>
-</div>
 
 <br><br>
 
 
-<section id="transcript" class="level2">
-<h2 class="anchored" data-anchor-id="transcript">Transcript</h2>
-<p>Coming soon!</p>
+<div class="podcast-player">
+<div class="podcast-buttons">
+<button type="button" class="podcast-btn active" data-platform="spotify">
+Listen on Spotify
+</button>
+<button type="button" class="podcast-btn" data-platform="apple">
+Listen on Apple Podcasts
+</button>
+</div>
+<div id="podcast-player-container" class="player-container">
+
+</div>
+</div>
+<script>
+(function () {
+  const spotifyUrl = "https://open.spotify.com/embed/episode/31qozpCajp2OA8hUnXyrFm?utm_source=generator&theme=0&t=0&si=80245d4cad4e4eee";
+  const appleUrl = "https://embed.podcasts.apple.com/us/podcast/1-the-case-of-the-curious-dancer/id6783287179?i=1000773862239";
+
+  const spotifyEmbed = `
+<iframe
+  style="border-radius:12px"
+  src="${spotifyUrl}"
+  width="100%"
+  height="352"
+  frameborder="0"
+  allowfullscreen
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+  loading="lazy">
+</iframe>`;
+
+  const appleEmbed = `
+<iframe
+  allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+  frameborder="0"
+  height="175"
+  style="width:100%;overflow:hidden;border-radius:12px;"
+  sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+  src="${appleUrl}">
+</iframe>`;
+
+  const container = document.getElementById("podcast-player-container");
+  container.innerHTML = spotifyEmbed;
+
+  document.querySelectorAll(".podcast-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      container.innerHTML = btn.dataset.platform === "spotify" ? spotifyEmbed : appleEmbed;
+      document.querySelectorAll(".podcast-btn").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+    });
+  });
+})();
+</script>
+<p>Welcome to our brand new podcast - Python They Wrote! The official podcast of the NIHR ARC South West’s Health Service Modelling Associates (HSMA) Programme (https://hsma.co.uk). Python They Wrote is a celebration of modelling and data science in healthcare, and features interviews with past and presents students of our HSMA programme talking about real world applied data science in the the health service.</p>
+<p>In this first episode, we introduce the HSMA programme to our listeners, before interviewing one of our alumni - the wonderful Kayleigh Haydock (Artificial Intelligence and Data Science Specialist at Royal Devon University Healthcare NHS Foundation Trust). We talk to Kayleigh about her career to date, her journey into the world of computing and data science, her experience of the HSMA programme and her pioneering new data science role in the South West of England.</p>
+<p>We also put Kayleigh through her paces in our brand new regular games - Punder Pressure and Murder Did She Write? Find out whether her pun and murder deduction skills were up to the task!</p>
+<p>Follow us on LinkedIn : https://www.linkedin.com/company/hsma-programme</p>
+<p>Subscribe to our YouTube channel : https://www.youtube.com/<span class="citation" data-cites="hsma">@hsma</span></p>
+<p>This podcast is independent research supported by the National Institute for Health Research Applied Research Collaboration South West. The views expressed in this podcast are those of the author(s) and not necessarily those of the National Institute for Health Research or the Department of Health and Social Care</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
