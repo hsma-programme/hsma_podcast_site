@@ -11,10 +11,14 @@ pub-info:
       - name: Listen on Apple Podcasts
         url: https://podcasts.apple.com/us/podcast/1-the-case-of-the-curious-dancer/id6783287179?i=1000773862239
         icon: fa-brands fa-apple
+      - name: Listen on Amazon Music
+        url: https://music.amazon.co.uk/podcasts/9e4dcd5b-036d-4ab1-a44b-12fd5a128507/episodes/4b33a8a6-e089-4026-86dc-448eb6c2ae79/python-they-wrote-the-hsma-podcast-1-the-case-of-the-curious-dancer
+        icon: fa-brands fa-amazon
 image: "podcast_1_thumb_kayleigh.png"
 title-block-banner: ../../resources/banner.png
 spotify_embed: "https://open.spotify.com/embed/episode/31qozpCajp2OA8hUnXyrFm?utm_source=generator&theme=0&t=0&si=80245d4cad4e4eee"
 apple_embed: "https://embed.podcasts.apple.com/us/podcast/1-the-case-of-the-curious-dancer/id6783287179?i=1000773862239"
+amazon_url: "https://music.amazon.co.uk/podcasts/9e4dcd5b-036d-4ab1-a44b-12fd5a128507/episodes/4b33a8a6-e089-4026-86dc-448eb6c2ae79/python-they-wrote-the-hsma-podcast-1-the-case-of-the-curious-dancer"
 
 ---
 

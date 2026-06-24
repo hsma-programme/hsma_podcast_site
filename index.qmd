@@ -14,7 +14,7 @@ page-layout: full
 #       max-items: 1
 spotify_embed: "https://open.spotify.com/embed/show/033fZhKMh7wfOOvCunS9C2?utm_source=generator&theme=0&t=0&si=45a1dce3cda44d41"
 apple_embed: "https://embed.podcasts.apple.com/us/podcast/1-the-case-of-the-curious-dancer/id6783287179?i=1000773862239"
-
+amazon_url: "https://music.amazon.co.uk/podcasts/9e4dcd5b-036d-4ab1-a44b-12fd5a128507/python-they-wrote-the-hsma-podcast"
 ---
 
 <style>

@@ -554,3 +554,37 @@ a {
 .player-container {
   min-height: 360px;
 }
+
+.amazon-music-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  height: 175px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #0a2540 0%, #00A8E1 100%);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.amazon-music-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.amazon-music-cta svg {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.amazon-music-cta i {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}

@@ -6,6 +6,9 @@ Listen on Spotify
 <button type="button" class="podcast-btn" data-platform="apple">
 Listen on Apple Podcasts
 </button>
+<button type="button" class="podcast-btn" data-platform="amazon">
+Listen on Amazon Music
+</button>
 </div>
 <div class="player-container" id="podcast-player-container"></div>
 </div>
@@ -14,6 +17,7 @@ Listen on Apple Podcasts
 (function () {
   const spotifyUrl = "{{< meta spotify_embed >}}";
   const appleUrl = "{{< meta apple_embed >}}";
+  const amazonUrl = "{{< meta amazon_url >}}"; // placeholder: add amazon_url to the .qmd front matter
 
   const spotifyEmbed = `
 <iframe
@@ -37,12 +41,24 @@ Listen on Apple Podcasts
   src="${appleUrl}">
 </iframe>`;
 
+const amazonButton = `
+<a href="${amazonUrl}" target="_blank" rel="noopener" class="amazon-music-cta">
+  <i class="fa-brands fa-amazon"></i>
+  Click here to go to Amazon Music
+</a>`;
+
+  const embeds = {
+    spotify: spotifyEmbed,
+    apple: appleEmbed,
+    amazon: amazonButton,
+  };
+
   const container = document.getElementById("podcast-player-container");
   container.innerHTML = spotifyEmbed;
 
   document.querySelectorAll(".podcast-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
-      container.innerHTML = btn.dataset.platform === "spotify" ? spotifyEmbed : appleEmbed;
+      container.innerHTML = embeds[btn.dataset.platform];
       document.querySelectorAll(".podcast-btn").forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
     });
