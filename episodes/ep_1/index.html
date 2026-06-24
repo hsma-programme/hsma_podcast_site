@@ -205,6 +205,7 @@ background-size: cover;
             <ul class="project-links">
                                                 <button class="custom-button"><a href="https://open.spotify.com/episode/31qozpCajp2OA8hUnXyrFm?si=210fb3a25a244edb"><i class="fa-brands fa-spotify"></i> Listen on Spotify</a></button>
                                                                 <button class="custom-button"><a href="https://podcasts.apple.com/us/podcast/1-the-case-of-the-curious-dancer/id6783287179?i=1000773862239"><i class="fa-brands fa-apple"></i> Listen on Apple Podcasts</a></button>
+                                                                <button class="custom-button"><a href="https://music.amazon.co.uk/podcasts/9e4dcd5b-036d-4ab1-a44b-12fd5a128507/episodes/4b33a8a6-e089-4026-86dc-448eb6c2ae79/python-they-wrote-the-hsma-podcast-1-the-case-of-the-curious-dancer"><i class="fa-brands fa-amazon"></i> Listen on Amazon Music</a></button>
                                             </ul>
         </div>
         
@@ -263,6 +264,9 @@ Listen on Spotify
 <button type="button" class="podcast-btn" data-platform="apple">
 Listen on Apple Podcasts
 </button>
+<button type="button" class="podcast-btn" data-platform="amazon">
+Listen on Amazon Music
+</button>
 </div>
 <div id="podcast-player-container" class="player-container">
 
@@ -272,6 +276,7 @@ Listen on Apple Podcasts
 (function () {
   const spotifyUrl = "https://open.spotify.com/embed/episode/31qozpCajp2OA8hUnXyrFm?utm_source=generator&theme=0&t=0&si=80245d4cad4e4eee";
   const appleUrl = "https://embed.podcasts.apple.com/us/podcast/1-the-case-of-the-curious-dancer/id6783287179?i=1000773862239";
+  const amazonUrl = "https://music.amazon.co.uk/podcasts/9e4dcd5b-036d-4ab1-a44b-12fd5a128507/episodes/4b33a8a6-e089-4026-86dc-448eb6c2ae79/python-they-wrote-the-hsma-podcast-1-the-case-of-the-curious-dancer"; // placeholder: add amazon_url to the .qmd front matter
 
   const spotifyEmbed = `
 <iframe
@@ -295,12 +300,24 @@ Listen on Apple Podcasts
   src="${appleUrl}">
 </iframe>`;
 
+const amazonButton = `
+<a href="${amazonUrl}" target="_blank" rel="noopener" class="amazon-music-cta">
+  <i class="fa-brands fa-amazon"></i>
+  Click here to go to Amazon Music
+</a>`;
+
+  const embeds = {
+    spotify: spotifyEmbed,
+    apple: appleEmbed,
+    amazon: amazonButton,
+  };
+
   const container = document.getElementById("podcast-player-container");
   container.innerHTML = spotifyEmbed;
 
   document.querySelectorAll(".podcast-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
-      container.innerHTML = btn.dataset.platform === "spotify" ? spotifyEmbed : appleEmbed;
+      container.innerHTML = embeds[btn.dataset.platform];
       document.querySelectorAll(".podcast-btn").forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
     });

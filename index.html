@@ -254,6 +254,9 @@ Listen on Spotify
 <button type="button" class="podcast-btn" data-platform="apple">
 Listen on Apple Podcasts
 </button>
+<button type="button" class="podcast-btn" data-platform="amazon">
+Listen on Amazon Music
+</button>
 </div>
 <div id="podcast-player-container" class="player-container">
 
@@ -263,6 +266,7 @@ Listen on Apple Podcasts
 (function () {
   const spotifyUrl = "https://open.spotify.com/embed/show/033fZhKMh7wfOOvCunS9C2?utm_source=generator&theme=0&t=0&si=45a1dce3cda44d41";
   const appleUrl = "https://embed.podcasts.apple.com/us/podcast/1-the-case-of-the-curious-dancer/id6783287179?i=1000773862239";
+  const amazonUrl = "https://music.amazon.co.uk/podcasts/9e4dcd5b-036d-4ab1-a44b-12fd5a128507/python-they-wrote-the-hsma-podcast"; // placeholder: add amazon_url to the .qmd front matter
 
   const spotifyEmbed = `
 <iframe
@@ -286,12 +290,24 @@ Listen on Apple Podcasts
   src="${appleUrl}">
 </iframe>`;
 
+const amazonButton = `
+<a href="${amazonUrl}" target="_blank" rel="noopener" class="amazon-music-cta">
+  <i class="fa-brands fa-amazon"></i>
+  Click here to go to Amazon Music
+</a>`;
+
+  const embeds = {
+    spotify: spotifyEmbed,
+    apple: appleEmbed,
+    amazon: amazonButton,
+  };
+
   const container = document.getElementById("podcast-player-container");
   container.innerHTML = spotifyEmbed;
 
   document.querySelectorAll(".podcast-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
-      container.innerHTML = btn.dataset.platform === "spotify" ? spotifyEmbed : appleEmbed;
+      container.innerHTML = embeds[btn.dataset.platform];
       document.querySelectorAll(".podcast-btn").forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
     });
